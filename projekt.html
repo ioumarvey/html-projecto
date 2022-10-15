@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+	
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="./style.css"/>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Monkty</title>
+
+		<link rel="icon" type="image/x-icon" href="./img/kitku.svg">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script>
+		$(window).scroll(function() {
+			var height = $(window).scrollTop();
+		
+			if(height  > 700) {
+				$("#navbar").addClass("transparent")
+			}else{
+				$("#navbar").removeClass("transparent")
+			}
+		});
+	   </script>
+
+	</head>
+
+	<body>
+		<header id="navbar">
+			<div class="logo-container">
+				<img src="./img/kitku.svg" alt="kitku" width="32" height="32">
+					<h4 class="logo"><b>monkty</b></h4>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a class="nav-link" href="kontakt.html">kontakt</a></li>
+					<li><a class="nav-link" href="rejestracja.html">rejestracja</a></li>
+				</ul>
+			</nav>
+
+			<div class="login">
+				<a class="zaloguj" href="form.html"><b>zaloguj się</b></a>
+				<img src="./img/kitku.svg" alt="kitku" width="32" height="32"/>
+			</div>
+		</header>
+
+		<main>
+			<section class="rzeczy">
+				<div class="wstep">
+					<div class="tekst">
+						<h1>Monkty to amatorskie studio deweloperskie gier indie. </h1>
+						<p>W tym momencie pracujemy nad naszą kolejną grą pt. "moonkity", która będzie 2D platformówką z elementami metroidvani. Nasi gracze są też w stanie zapisać się i zalogować na stronę, aby uzyskać dostęp do wczesnej pre-alphy gry.</p>
+					</div>
+				</div>
+				<div class="obrazek">
+					<img src="./img/kitku.svg"  alt="kitku"/>
+				</div>
+			</section>
+			<div class="guziki">
+			<button onclick="document.getElementById('klik').style.color = 'yellow'" class="guzik" >Zmień kolor tekstu na żółty</button>
+			<button onclick="document.getElementById('klik').style.color = 'white'" class="guzik" >Zmień kolor tekstu na biały</button>
+			</div>
+			<section class="placeholder" id="klik">
+				<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac tempus diam. Curabitur vel laoreet nunc. Vivamus et nisl in quam bibendum faucibus. Duis diam lorem, accumsan a finibus non, dictum quis turpis. Aliquam laoreet risus et dolor venenatis tincidunt. Nunc venenatis fringilla orci quis euismod. Ut mattis enim eget placerat semper. Phasellus semper tellus eu lectus facilisis, sodales blandit eros egestas. Pellentesque venenatis sodales gravida. Integer eu sollicitudin libero, eu eleifend erat. In venenatis magna id maximus pulvinar. </p>
+
+				<p>	Duis accumsan dapibus iaculis. Donec congue urna interdum diam sagittis pellentesque. Nulla tristique lobortis quam nec ornare. Etiam egestas nisi id orci tempus imperdiet. Nunc vel lorem facilisis, cursus est sit amet, dignissim lorem. Phasellus sit amet urna a elit volutpat porta nec quis elit. Integer tristique enim molestie erat porta congue. Donec vel varius eros. Sed interdum luctus dolor sed lacinia. Aenean ultricies lacus turpis, in pharetra metus fringilla ut. Duis nisi massa, vulputate in ex sed, ultrices posuere sapien. Ut at egestas enim. Donec auctor a sem non laoreet.</p>
+					
+				<p>	Donec a libero non quam tincidunt mollis eget sed metus. Maecenas a est metus. Mauris erat libero, condimentum quis convallis nec, maximus vitae nunc. Ut dapibus lorem felis, non suscipit turpis dictum eu. Nullam ac ex non quam varius vestibulum vitae non urna. Maecenas blandit, nulla sed pellentesque commodo, enim urna sollicitudin eros, ac consequat magna nibh vel enim. Fusce mi nisi, tempor eu pellentesque vitae, vehicula a odio. Donec auctor vitae mi id vulputate. Ut maximus, felis eu convallis placerat, orci orci euismod urna, vitae mattis dolor lorem et mi. Donec pellentesque magna et turpis pretium, eget rutrum ex egestas.</p>
+					
+				<p>	Etiam vitae pretium urna. Mauris ac libero vitae erat dignissim sollicitudin. Maecenas efficitur venenatis finibus. Donec nunc mauris, sollicitudin in commodo vitae, lacinia non erat. Maecenas volutpat venenatis euismod. Suspendisse potenti. Sed faucibus nisi id eros porta, id cursus nisl tristique. Pellentesque rutrum quam vel dignissim lobortis. Curabitur consequat id justo ut vestibulum. Curabitur efficitur leo quis tempor tincidunt. Nullam quis dui fermentum, lobortis felis nec, porta ante.</p>
+					
+				<p>	Etiam pretium porttitor placerat. Proin sit amet erat elit. Integer tincidunt hendrerit dapibus. Etiam mattis ex eu commodo posuere. Proin ut dictum nulla, eu interdum nunc. Aenean tincidunt, nunc vel sagittis luctus, ligula justo feugiat lacus, ultrices pharetra massa enim id orci. Proin lobortis purus vel augue cursus faucibus. Sed ut nisl vitae elit volutpat pharetra ac non turpis. Donec tortor ante, finibus eget pharetra non, dignissim eu diam. Duis tellus justo, laoreet et nisi nec, iaculis molestie lacus. Integer venenatis eget augue et laoreet.</p>
+					
+				<p>	Donec vitae ligula vitae neque facilisis gravida id ac magna. Maecenas sit amet turpis tincidunt, commodo mi id, euismod lacus. Aliquam enim nisl, scelerisque at velit id, cursus facilisis ligula. Aliquam erat volutpat. Pellentesque imperdiet tortor ac felis auctor scelerisque. Integer pellentesque diam odio, quis tincidunt eros ultricies eget. Vestibulum lacus ipsum, feugiat in ipsum at, faucibus volutpat urna. Aenean euismod mollis est, vitae fringilla magna tristique at. Sed imperdiet arcu a tempus posuere. Phasellus vitae risus facilisis, pulvinar lacus at, rutrum nisi. Curabitur vehicula porttitor urna, vel dignissim nunc luctus vitae. Pellentesque sed ipsum mauris. Aliquam dapibus tempor turpis. Pellentesque elementum erat nec ligula dapibus fermentum. Aenean finibus odio lacus, id tincidunt nisi posuere a. Praesent suscipit maximus finibus.</p>
+					
+				<p> Nunc sagittis finibus gravida. Fusce justo diam, tempor sit amet libero a, ornare ornare sem. Donec congue nibh id mollis dapibus. Fusce mattis mi lorem, a bibendum est fringilla a. Maecenas vitae magna vitae arcu fringilla interdum. Sed pharetra, mi a bibendum dapibus, tortor arcu vulputate turpis, in faucibus arcu sapien nec risus. Sed interdum cursus massa vehicula pulvinar. Phasellus neque lectus, rutrum at tincidunt ut, molestie vitae libero. Ut dignissim elit ac augue fringilla interdum. Maecenas tempor placerat dolor quis rhoncus. Phasellus eget viverra massa. In eget libero vitae justo aliquam pulvinar non ut risus. Curabitur et cursus enim. Nam condimentum ante massa, et ultrices ipsum sodales sit amet. Sed neque odio, vestibulum lobortis nisl et, commodo rutrum tortor. Praesent vitae mollis lacus.</p>
+					
+				<p>	Sed elit turpis, mattis sit amet cursus eget, facilisis at nisl. Nam a facilisis nibh. In hac habitasse platea dictumst. Nullam at convallis neque, eu consectetur dolor. Cras consectetur a ex quis pharetra. Maecenas fringilla lacus ligula, et blandit neque vestibulum sed. Integer ultricies venenatis nunc, non rutrum magna ultricies non. Vestibulum et porttitor arcu.</p>
+					
+				<p>	Mauris vehicula eros enim, et volutpat sem scelerisque a. Integer tempus sodales elit ac ultrices. Morbi rhoncus ex id ornare aliquet. Quisque id metus nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus iaculis lacus eu cursus efficitur. Mauris lacus lectus, bibendum ultricies nibh in, imperdiet pretium nunc. In rutrum vel tortor eu elementum. Integer magna ipsum, tempus ut nunc id, volutpat suscipit ligula. Integer suscipit, nulla vitae rhoncus mattis, nisi libero convallis quam, sit amet dapibus dolor est in massa. Aliquam blandit quam nunc, et interdum massa interdum cursus. Sed risus erat, lacinia id purus non, varius luctus ex. In id varius lectus. Phasellus consectetur ligula urna, at finibus ligula molestie in. Suspendisse potenti. Nunc nec lectus augue.</p>
+					
+				<p>	Sed metus ex, pulvinar bibendum tincidunt quis, pulvinar a dui. Duis vel aliquam elit. Nunc sed odio vulputate, dictum nulla quis, porttitor enim. Duis eget semper nisi. Mauris nisl nisl, placerat ut posuere vel, venenatis at lacus. In bibendum fermentum egestas. Suspendisse quam est, vestibulum ut volutpat luctus, sagittis eu nunc. Ut lorem ipsum, molestie ut velit nec, finibus commodo velit. Aliquam hendrerit, nibh vitae dapibus tincidunt, ipsum diam posuere nisi, id auctor purus urna et ante. Nullam fermentum iaculis est, sit amet pharetra est. </p>
+				
+			</section>
+
+		</main>
+		<footer>
+			<div class="stopka">
+				<p>©Smolny</p>
+			</div>
+		</footer>
+	</body>
+
+</html>

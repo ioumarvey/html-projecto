@@ -1,0 +1,310 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*główna strona*/
+body{
+    font-family: 'Dosis', sans-serif;
+    background-image: url("https://img.itch.zone/aW1hZ2UvNjEzNDMwLzMyNjQ2MjcucG5n/original/hbyjPE.png");
+    background-attachment: fixed;
+}
+
+.stopka{
+    display: flex;
+    background: rgb(3, 0, 29);
+    bottom: 0px;
+    height: 25px;
+    color: rgb(185, 198, 240);
+    justify-content: center;
+    
+}
+
+button{
+    font-family: 'Dosis', sans-serif;
+}
+
+header {
+    display: flex;
+    color: lightblue;
+    width: 100%;
+    height: 32px;
+    align-items: center;
+    position: fixed;
+}
+
+.logo-container,
+.nav-links,
+.login {
+    display: flex;
+}
+
+.logo-container{
+ background: #21154b5d;
+ flex: 1;
+}
+
+.logo{
+    font-weight: 400;
+    margin: 5px;
+    padding: 0px 0px 0px 5px;
+}
+
+nav{
+    background: #0800226e;
+    flex: 2;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+    margin: 5px;
+}
+.nav-link{
+    color: lightslategray;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgb(88, 15, 170);
+}
+
+a:hover{
+    color: rgb(111, 93, 175);
+}
+
+.transparent{
+    background: #080022;
+    width: 100%;
+    left: 0px;
+}
+
+
+.login{
+    background: #482fa167;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.zaloguj{
+    text-decoration: none;
+    padding: 3px 15px 0px 0px;
+    color: rgb(216, 223, 253);
+}
+
+.rzeczy{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.wstep{
+    flex: 1;
+    padding: 50px 0px 0px 0px;
+}
+
+
+.tekst h1{
+    font-size: 44px;
+    background: linear-gradient(to right, rgb(41, 41, 148), rgb(161, 161, 238));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-weight: bold;
+}
+
+.tekst p{
+    margin-top: 15px;
+    font-size: 22px;
+    background: linear-gradient(to left, rgb(202, 202, 252), rgb(102, 102, 160));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.guzik{
+    border: 2px solid rgba(0, 0, 0, 0.082);
+    background: rgba(0, 0, 87, 0.322);
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 50px 0px
+}
+
+button:hover{
+    color: #ffc400d8;
+}
+
+
+.placeholder{
+    color: rgb(190, 190, 255);
+    background-color: rgba(17, 13, 32, 0.671);
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+    margin: 15px 50px 30px;
+}
+
+.placeholder p{
+    text-indent: 50px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.obrazek {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.obrazek img {
+    height: 60vh;
+    filter: drop-shadow(0px 10px 7px black);
+    position: absolute;
+    top: 20%;
+    z-index: -1;
+}
+
+
+
+/*forms*/
+
+label{
+    color: rgb(185, 185, 219);
+}
+
+.forms{
+    padding: 10px 0px 5px 10px;
+    font-size: 15px;
+    text-align: right;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.tytuł{
+    color: white;
+    font-size: 45px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.logowanie{
+    margin: auto;
+    background: rgba(137, 121, 212, 0.342);
+    max-width: 350px;
+    max-height: 500px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.rejestruj{
+    font-size: 12px;
+    padding: 5px;
+    color: rgb(164, 149, 252);
+    text-align: center;
+    text-decoration: none;
+}
+
+.rejestruj a{
+    text-decoration: none;
+    color: rgb(25, 0, 66);
+}
+
+.formbutt{
+    border: 2px hidden;
+    background: rgb(31, 22, 63);
+    color: white;
+    width: 60px;
+    height: 25px;
+    cursor: pointer;
+    margin: 15px 5px;
+    font-size: 12px;
+    align-items: center;
+    
+}
+
+.guziki{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.obrama{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.tabela{
+    background-color: #a388fca9;
+    height: 200px;
+    width: 300px;
+    font-size: 20px;
+    border: solid #0800226e ;
+}
+
+/*kontakt*/
+
+.kontakt{
+    font-size: 20px;
+    color: rgb(166, 154, 235);
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 15px 0px;
+}
+
+.kontakt2{
+    font-size: 15px;
+    color: rgb(166, 154, 235);
+    font-weight: bold;
+    text-align: left;
+    margin: 0px 15px 20px;
+}
+
+.kontakttytul{
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 40px;
+    padding: 25px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 700px){
+    .rzeczy {
+        flex-direction: column;
+    }
+    .wstep{
+        margin-top: 5vh;
+        text-align: center;
+        
+    }
+    .tekscik h1{
+         font-size: 30px;
+    }
+    .tekscik p{
+         font-size: 18px;
+    }
+    .guziczki{
+        padding: 10px 0px 10px 0px;
+        bottom: 5%;
+    }
+    .obrazek img{
+        size: 50%;
+        position: static;
+    }
+}
